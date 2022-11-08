@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6369e897aad79e828444e152"
+  },
+  "id": "nmd_r1-primeblue-shoes",
+  "name": "NMD_R1 PRIMEBLUE SHOES",
+  "price": 3000000,
+  "sale": 0,
+  "desc": "Lorem ipsum",
+  "available": true,
+  "categories": [],
+  "detail": {
+    "sizes": [
+      3.5,
+      4,
+      4.5,
+      5
+    ],
+    "colors": [
+      "Core Black / Core Black / Core Black",
+      "Core Black / Cloud White / Grey Five",
+      "Cloud White / Core Black / Grey Three"
+    ]
+  },
+  "images": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667885207498"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667885207498"
+    }
+  },
+  "__v": 0
+}]

@@ -1,15 +1,15 @@
-import express, { Request, Response } from "express";
+import express, { NextFunction, Request, Response } from "express";
 import Product from "../Model/Product";
 import { Utils } from "../Utils/Utils";
 export class ProductController {
     constructor() {
 
     }
-    public getProducts = async (req: Request, res: Response) => {
+    public getProducts = async (req: Request, res: Response, next: NextFunction) => {
         let products = await Product.find();
         return res.status(200).json(products);
     }
-    public addProduct = async (req: Request, res: Response) => {
+    public addProduct = async (req: Request, res: Response, next: NextFunction) => {
         let { name, price, detail: {
             sizes, colors
         }} = req.body;
@@ -32,14 +32,33 @@ export class ProductController {
             detail: {
                 sizes, colors
             },
-            images: colors.map((color: string) => {
-                return {color, paths: ["a", "b"]};
-            }),//[{color}]
         })
         if(product) {
             res.status(200).json({
                 message: "success"
             })
+        } else {
+            res.status(409).json({
+                message: "failed"
+            })
         }
+    }
+    public getProductByID = async (req:Request, res: Response) => {
+        let id = req.params.id;
+        if(!id) 
+            return ({ message: "required", statusCode: 204 });
+        let product = await Product.findOne({ id });
+        if(product) {
+            return ({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                sale: product.sale,
+                desc: product.desc,
+                categories: product.categories,
+                images: product.images,
+                detail: product.detail
+            });
+        } else ({ message: "failed", statusCode: 409 });
     }
 }

@@ -60,16 +60,8 @@ const productSchema = new Schema<IProduct>({
         ]
     },
     images: [{
-        color: {
-            type: String,
-            required: true,
-        },
-        paths: [
-            {
-                type: String,
-                default: "duong dan hinh anh",
-            }
-        ]
+        type: String,
+        default: "duong dan hinh anh",
     }],
 }, { timestamps: true })
 
