@@ -52,7 +52,8 @@ export class ProductController {
             return ({
                 id: product.id,
                 name: product.name,
-                price: product.price,
+                price: Utils.moneyFormat(product.price),
+                available: product.available,
                 sale: product.sale,
                 desc: product.desc,
                 categories: product.categories,
