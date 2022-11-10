@@ -6,7 +6,12 @@ interface IProduct {
     sale: number,
     desc: string,
     available: boolean,
-    categories: string[],
+    categories: [
+        {
+            id: string,
+            title: string,
+        }
+    ],
     images: [
         {
             color: string,
@@ -16,6 +21,7 @@ interface IProduct {
     detail: {
         sizes: number[],
         colors: string[],
+        informations: string[]
     },
 }
 const productSchema = new Schema<IProduct>({
@@ -44,8 +50,14 @@ const productSchema = new Schema<IProduct>({
         default: true,
     },
     categories: [{
-        type: String,
-        default: "",
+        id: {
+            type: String,
+            required: true,
+        },
+        title: {
+            type: String,
+            required: true,
+        }
     }],
     detail: {
         sizes: [{
@@ -57,7 +69,13 @@ const productSchema = new Schema<IProduct>({
                 type: String,
                 required: true,
             }
-        ]
+        ],
+        informations: [
+            {
+                type: String,
+                required: true,
+            }
+        ],
     },
     images: [{
         type: String,

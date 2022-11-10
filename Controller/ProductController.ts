@@ -5,23 +5,41 @@ export class ProductController {
     constructor() {
 
     }
-    public getProducts = async (req: Request, res: Response, next: NextFunction) => {
+    public getProducts = async (req: Request, res: Response) => {
         let products = await Product.find();
-        return res.status(200).json(products);
+        let productList = products.map((product) => { return {
+            id: product.id,
+            name: product.name,
+            price: Utils.moneyFormat(product.price),
+            sale_price: Utils.moneyFormat(product.price*(1 - product.sale)),
+            sale: product.sale,
+            image: product.images[0],
+        }});
+        return productList;
     }
-    public addProduct = async (req: Request, res: Response, next: NextFunction) => {
-        let { name, price, detail: {
-            sizes, colors
-        }} = req.body;
-        if(!name || !price || !sizes || !colors) {
-            return res.sendStatus(400).json({
+    public getProductsForPages = async (req: Request, res: Response) => {
+        let products = await Product.find();
+        let productList = products.map((product) => { return {
+            id: product.id,
+            name: product.name,
+            price: Utils.moneyFormat(product.price),
+            sale_price: Utils.moneyFormat(product.price*(1 - product.sale)),
+            sale: product.sale,
+            thumbnail: product.images[0],
+        }});
+        return productList;
+    }
+    public addProduct = async (req: Request, res: Response) => {
+        let { name, price, detail: { sizes, colors, informations }, categories, desc, images} = req.body;
+        if(!name || !price || !sizes || !colors || !informations || !categories) {
+            return res.status(400).json({
                 message: 'required'
             });
         }
         let id = Utils.idConverter(name);
         const duplicated = await Product.findOne({ id });
         if(duplicated) {
-            return res.sendStatus(400).json({
+            return res.status(400).json({
                 message: "duplicated"
             })
         }
@@ -30,8 +48,11 @@ export class ProductController {
             name,
             price,
             detail: {
-                sizes, colors
+                sizes, colors, informations
             },
+            categories,
+            desc,
+            images
         })
         if(product) {
             res.status(200).json({
@@ -45,10 +66,12 @@ export class ProductController {
     }
     public getProductByID = async (req:Request, res: Response) => {
         let id = req.params.id;
+        console.log(id);
         if(!id) 
             return ({ message: "required", statusCode: 204 });
         let product = await Product.findOne({ id });
         if(product) {
+            // console.log()
             return ({
                 id: product.id,
                 name: product.name,

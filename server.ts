@@ -23,9 +23,9 @@ app.use(express.static("public"));
 app.get('/', (req: Request, res: Response) => {
     res.render("index");
 });
-app.use('/product', require('./Route/API/ProductRoute'));
+app.use('/product', require('./Route/ProductRoute'));
 
-
+app.use('/api/product', require('./Route/API/ProductAPI'));
 app.listen(PORT, () => {
     Database();
     console.log(`Server is running at PORT: ${PORT}`);
