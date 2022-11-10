@@ -6,7 +6,7 @@
   "name": "NMD_R1 PRIMEBLUE SHOES",
   "price": 3000000,
   "sale": 0,
-  "desc": "Lorem ipsum",
+  "desc": "<h3 style=\"font-style: italic; font-weight: 700;\">ĐÔI GIÀY TRAINER TÂN TIẾN MANG PHONG CÁCH GIÀY CHẠY BỘ.</h3><p>Soạn đồ, mang giày và xuất phát. Hành trình phiêu lưu khắp phố phường đang vẫy gọi với đôi giày NMD_R1 này. Là phiên bản cập nhật của dòng giày chạy bộ thập niên 80 trứ danh trong kho di sản adidas, đôi giày trainer hiện đại này có thân giày bằng vải dệt kim mềm mại, co giãn và lớp đệm Boost hoàn trả năng lượng cho cảm giác thoải mái suốt ngày dài. Sắc màu táo bạo và các miếng bịt đế giữa đặc trưng gây ấn tượng mạnh mẽ, vậy nên bạn chắc chắn sẽ xuất hiện đầy phong cách ở bất cứ nơi đâu.\n\nSản phẩm này may bằng vải công nghệ Primeblue, chất liệu tái chế hiệu năng cao có sử dụng sợi Parley Ocean Plastic. 50% thân giày làm bằng vải dệt, 75% vải dệt bằng sợi Primeblue. Không sử dụng polyester nguyên sinh.</p>",
   "available": true,
   "categories": [],
   "detail": {
@@ -20,9 +20,21 @@
       "Core Black / Core Black / Core Black",
       "Core Black / Cloud White / Grey Five",
       "Cloud White / Core Black / Grey Three"
+    ],
+    "informations": [
+      "Có dây giày",
+      "Thân giày bằng vải dệt kim co giãn",
+      "Nâng đỡ, vừa vặn như đi tất",
+      "Đế giữa Boost",
+      "Đế ngoài bằng cao su",
+      "Primeblue"
     ]
   },
-  "images": [],
+  "images": [
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/62d96641e799450fbbdfad0800cb06ed_9366/NMD_R1_Primeblue_Shoes_Black_GZ9256_01_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d44fa06fc83f4644b7e8acbc01160e1b_9366/NMD_R1_Primeblue_Shoes_Black_GZ9258_01_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e03e7a2a9cb44dfac2bad6a00f95888_9366/NMD_R1_Primeblue_Shoes_White_GZ9261_01_standard.jpg"
+  ],
   "createdAt": {
     "$date": {
       "$numberLong": "1667885207498"
@@ -31,6 +43,114 @@
   "updatedAt": {
     "$date": {
       "$numberLong": "1667885207498"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636b8d841e6e4b85d748144f"
+  },
+  "id": "stan-smith-gy9380",
+  "name": "STAN SMITH",
+  "price": 2500000,
+  "sale": 0,
+  "desc": "<h3 style='font-style: italic; font-weight: 700;'>ĐÔI GIÀY TRAINER KINH ĐIỂN CÓ SỬ DỤNG CHẤT LIỆU TÁI CHẾ..</h3><p>Luôn mới mẻ. Giày adidas Stan Smith đã viết nên định nghĩa về phong cách trên sân tennis từ hơn 50 năm trước, và thiết kế gọn gàng tối giản ấy giờ đây vẫn rất thịnh hành. Kinh điển pha thêm nét mới mẻ, phiên bản này có viền gót giày khâu nổi mang hơi hướng bóng chày.Làm từ một nhóm chất liệu tái chế, thân giày có chứa tối thiểu 50% thành phần tái chế. Sản phẩm này đại diện cho một trong số rất nhiều các giải pháp của chúng tôi hướng tới chấm dứt rác thải nhựa.</p>",
+  "available": true,
+  "categories": [
+    {
+      "id": "women",
+      "title": "Nữ",
+      "_id": {
+        "$oid": "636b8d841e6e4b85d7481450"
+      }
+    }
+  ],
+  "detail": {
+    "sizes": [
+      3.5,
+      4,
+      4.5,
+      5
+    ],
+    "colors": [
+      "Cloud White / Magic Grey / Ecru Tint"
+    ],
+    "informations": [
+      "Dáng regular fit",
+      "Có dây giày",
+      "Thân giày bằng chất liệu tổng hợp",
+      "Lớp lót bằng chất liệu tổng hợp",
+      "Đế ngoài bằng cao su",
+      "Thân giày có chứa tối thiểu 50% thành phần tái chế"
+    ]
+  },
+  "images": [
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/29cae7d606754d34872cae7000162cbc_9366/Giay_Stan_Smith_trang_GY9381_01_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/008283772de742af98abae9300faf723_9366/Giay_Stan_Smith_trang_GY9380_01_standard.jpg"
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667992964683"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667992964683"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "636b8f87181eaac9a73e3bf3"
+  },
+  "id": "campus-80s-south-park-towelie-gz9177",
+  "name": "CAMPUS 80S SOUTH PARK TOWELIE",
+  "price": 2700000,
+  "sale": 0,
+  "desc": "<h3 style='font-style: italic; font-weight: 700;'>NHÂN VẬT TOWELIE TRONG PHIM SOUTH PARK HÓA THÂN THÀNH ĐÔI GIÀY CAMPUS NÀY.</h3><p>Đừng quên mang theo khăn bông. Khó mà quên được khi bạn có Towelie bên mình. Trong diện mạo đôi giày adidas Campus trứ danh. Thêm vào đó là thông điệp rõ ràng ngay trên lưỡi gà. Khi bước ra nắng, đôi mắt chuyển sang màu đỏ. Một ngăn nhỏ có băng dính gai bên trong lưỡi gà để bạn cất giữ bất kỳ thứ gì có thể đựng vừa trong đó. Tạm thời là chiếc móc chìa khóa hình Towelie.</p>",
+  "available": true,
+  "categories": [
+    {
+      "id": "originals",
+      "title": "Nguyên bản",
+      "_id": {
+        "$oid": "636b8f87181eaac9a73e3bf4"
+      }
+    }
+  ],
+  "detail": {
+    "sizes": [
+      3.5,
+      4,
+      4.5,
+      5
+    ],
+    "colors": [
+      "Chalk Purple / Cloud White / Chalk Purple"
+    ],
+    "informations": [
+      "Dáng regular fit",
+      "Có dây giày",
+      "Thân giày bằng vải dệt bông",
+      "Lớp lót bằng da",
+      "Lưỡi gà có ngăn",
+      "Đế ngoài bằng cao su"
+    ]
+  },
+  "images": [
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5c07accb9bc1402295e7ac8300fb78dd_9366/CAMPUS_80S_SOUTH_PARK_TOWELIE_Mau_tim_GZ9177_01_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f0f3374de6834e188d0fac8300fba4c2_9366/CAMPUS_80S_SOUTH_PARK_TOWELIE_Mau_tim_GZ9177_011_hover_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2d0a9a40af694299b918ac8300fba7c0_9366/CAMPUS_80S_SOUTH_PARK_TOWELIE_Mau_tim_GZ9177_012_hover_standard.jpg",
+    "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/20c76bf41cc14d75ad0cac8300fb96b3_9366/CAMPUS_80S_SOUTH_PARK_TOWELIE_Mau_tim_GZ9177_04_standard.jpg"
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667993479717"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667993479717"
     }
   },
   "__v": 0
