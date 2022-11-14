@@ -15,7 +15,7 @@ export class ProductController {
             sale: product.sale,
             image: product.images[0],
         }});
-        return res.json(productList);
+        return productList;
     }
     public getProductsForPages = async (req: Request, res: Response) => {
         let products = await Product.find();
